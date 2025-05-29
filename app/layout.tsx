@@ -27,7 +27,105 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header className="bg-gray-800 text-white p-4">
+          <div className="container mx-auto flex justify-between items-center">
+            <h1 className="text-2xl font-bold">Gemini API Showcase</h1>
+            <nav>
+              <ul className="flex flex-wrap space-x-2 sm:space-x-4">
+                <li>
+                  <a href="/" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/text-generation"
+                    className="px-2 py-1 hover:bg-gray-700 rounded"
+                  >
+                    Text Generation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/image-generation"
+                    className="px-2 py-1 hover:bg-gray-700 rounded"
+                  >
+                    Image Generation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/video-generation"
+                    className="px-2 py-1 hover:bg-gray-700 rounded"
+                  >
+                    Video Generation
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Speech Generation
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Music Generation
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Long Context
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Structured Output
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Thinking
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Function Calling
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Document Understanding
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Image Understanding
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Video Understanding
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Audio Understanding
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    Code Execution
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="px-2 py-1 hover:bg-gray-700 rounded">
+                    URL Context
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <main className="p-4 md:p-6 lg:p-8">{children}</main>
       </body>
     </html>
   );
